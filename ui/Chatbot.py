@@ -14,9 +14,9 @@ from utils.utils import get_instance, snake_case
 from utils.ux import sidebar, get_api_key
 
 # Start page
-st.title("🚢 Youtube-To-Chatbot")
+st.title("🚢 GoHighLevel Advisor")
 st.write(
-    "A project brought to life by [Enias](https://twitter.com/eniascailliau), inspired by [Emmet Halm](https://twitter.com/ehalm_) and [Taranjeet](https://twitter.com/taranjeetio)"
+    "A project brought to life by ChadGPT.BOT"
 )
 
 sidebar()
@@ -53,9 +53,9 @@ else:
         st.session_state.instance = None
         st.experimental_rerun()
 
-    st.header(f"Start chatting with Rik")
+    st.header(f"Start chatting with ChadGPT")
     st.subheader(
-        f"🧠 Rick gleaned wisdom from: {channel_name.replace('_', ' ').title()}"
+        f"🧠 ChadGPT gleaned wisdom from: {channel_name.replace('_', ' ').title()}"
     )
     st.image(st.session_state.channel_thumbnail)
     if "messages" not in st.session_state:
